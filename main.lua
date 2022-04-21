@@ -428,7 +428,7 @@ do
             if Options.ScoreModifier.Value == 'No decrease on miss' then
                 args[2] = 0
             elseif Options.ScoreModifier.Value == 'Increase score on miss' then
-                args[2] = math.abs(score)
+                args[2] = (math.abs(score) * 2)
             end
         end
 
